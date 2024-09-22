@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 			}
 			templateFile.close();
 
-		} else if (strncmp(argv[i], "1", 12) == 0) {
+		} else if (strncmp(argv[i], "--map-file=", 12) == 0) {
 			char* path = strchr(argv[i], '=') + 1; 
    			image = cv::imread(path);
 
